@@ -38,3 +38,6 @@ app.get("/class-transition/:class", (req, res) => {
 app.listen(port, () => {
   console.log(`Server attivo su porta ${port}`);
 });
+app.get('/', (req, res) => {
+  res.send('Server operativo!');
+});
